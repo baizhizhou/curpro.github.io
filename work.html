@@ -12,12 +12,7 @@
     <!-- 头部导航栏 -->
     <header class="header">
         <div class="header-content">
-            <h1 class="site-title">个人网盘</h1>
-            <nav class="nav-menu">
-                <a href="study.html" class="nav-item">学习</a>
-                <a href="work.html" class="nav-item">工作</a>
-                <a href="life.html" class="nav-item">生活</a>
-            </nav>
+            <h1 class="site-title"><a href="index.html" class="title-link">个人网盘</a></h1>
             <div class="search-box">
                 <input type="text" placeholder="搜索资料...">
                 <button class="search-btn">
@@ -29,7 +24,13 @@
 
     <!-- 主体内容区域 -->
     <main class="main-content">
-        <h2 class="page-title">工作资料列表</h2>
+        <div class="page-header">
+            <h2 class="page-title">工作资料列表</h2>
+            <a href="index.html" class="back-home-btn">
+                <i class="fas fa-arrow-left"></i>
+                返回首页
+            </a>
+        </div>
         
         <div class="table-container">
             <table class="data-table">
@@ -87,13 +88,9 @@
 
         <!-- 分页导航 -->
         <div class="pagination">
-            <a href="#" class="page-btn">首页</a>
-            <a href="#" class="page-btn">上一页</a>
-            <a href="#" class="page-btn active">1</a>
-            <a href="#" class="page-btn">2</a>
-            <a href="#" class="page-btn">3</a>
-            <a href="#" class="page-btn">下一页</a>
-            <a href="#" class="page-btn">末页</a>
+            <a href="work.html?page=1" class="page-link">上一页</a>
+            <span class="page-number">1</span>
+            <a href="work.html?page=2" class="page-link">下一页</a>
         </div>
     </main>
 

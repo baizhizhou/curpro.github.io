@@ -66,4 +66,35 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+});
+
+// 处理分页
+function handlePagination() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentPage = parseInt(urlParams.get('page')) || 1;
+    
+    // 更新分页按钮状态
+    const prevLink = document.querySelector('.page-link:first-child');
+    const nextLink = document.querySelector('.page-link:last-child');
+    const pageNumber = document.querySelector('.page-number');
+    
+    if (prevLink) {
+        prevLink.href = `${window.location.pathname}?page=${currentPage - 1}`;
+        prevLink.style.visibility = currentPage === 1 ? 'hidden' : 'visible';
+    }
+    
+    if (nextLink) {
+        nextLink.href = `${window.location.pathname}?page=${currentPage + 1}`;
+    }
+    
+    if (pageNumber) {
+        pageNumber.textContent = currentPage;
+    }
+}
+
+// 页面加载完成后执行
+document.addEventListener('DOMContentLoaded', function() {
+    handleCopy();
+    handleSearch();
+    handlePagination();
 }); 
