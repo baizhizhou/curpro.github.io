@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作资料 - 个人网盘</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="site-title">个人网盘</h1>
+            <nav class="nav-menu">
+                <a href="study.html" class="nav-item">学习</a>
+                <a href="work.html" class="nav-item">工作</a>
+                <a href="life.html" class="nav-item">生活</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索资料...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体内容区域 -->
+    <main class="main-content">
+        <h2 class="page-title">工作资料列表</h2>
+        
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>资料名称</th>
+                        <th>资料简介</th>
+                        <th>网盘地址</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#" class="resource-link">项目管理模板</a></td>
+                        <td class="resource-desc">包含项目计划、进度跟踪、风险管理等模板</td>
+                        <td>
+                            <span class="resource-url">https://example.com/project-templates</span>
+                            <button class="copy-btn" onclick="copyToClipboard('https://example.com/project-templates')">
+                                复制
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="resource-link">办公软件教程</a></td>
+                        <td class="resource-desc">Office、WPS等办公软件使用技巧和教程</td>
+                        <td>
+                            <span class="resource-url">https://example.com/office-tutorials</span>
+                            <button class="copy-btn" onclick="copyToClipboard('https://example.com/office-tutorials')">
+                                复制
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="resource-link">工作报告模板</a></td>
+                        <td class="resource-desc">周报、月报、季度报告等各类工作报告模板</td>
+                        <td>
+                            <span class="resource-url">https://example.com/report-templates</span>
+                            <button class="copy-btn" onclick="copyToClipboard('https://example.com/report-templates')">
+                                复制
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="resource-link">会议纪要模板</a></td>
+                        <td class="resource-desc">各类会议记录、会议纪要的标准模板</td>
+                        <td>
+                            <span class="resource-url">https://example.com/meeting-templates</span>
+                            <button class="copy-btn" onclick="copyToClipboard('https://example.com/meeting-templates')">
+                                复制
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 分页导航 -->
+        <div class="pagination">
+            <a href="#" class="page-btn">首页</a>
+            <a href="#" class="page-btn">上一页</a>
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <a href="#" class="page-btn">下一页</a>
+            <a href="#" class="page-btn">末页</a>
+        </div>
+    </main>
+
+    <!-- 底部信息栏 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="copyright">
+                © 2025 个人网盘 保留所有权利
+            </div>
+            <div class="contact">
+                <a href="mailto:your.email@example.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" class="contact-item">
+                    <i class="fab fa-weixin"></i>
+                </a>
+                <a href="#" class="contact-item">
+                    <i class="fab fa-weibo"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

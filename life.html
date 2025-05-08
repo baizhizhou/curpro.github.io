@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生活资料 - 个人网盘</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/life.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 头部导航栏 -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="site-title">个人网盘</h1>
+            <nav class="nav-menu">
+                <a href="study.html" class="nav-item">学习</a>
+                <a href="work.html" class="nav-item">工作</a>
+                <a href="life.html" class="nav-item">生活</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索资料...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体内容区域 -->
+    <main class="main-content">
+        <h2 class="page-title">生活资料列表</h2>
+        
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>资料名称</th>
+                        <th>资料简介</th>
+                        <th>网盘地址</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#" class="resource-link">美食菜谱合集</a></td>
+                        <td class="resource-desc">包含中餐、西餐、甜点等多种菜系的美食制作教程</td>
+                        <td>
+                            <span class="resource-url">https://example.com/recipes</span>
+                            <button class="copy-btn" onclick="copyToClipboard('https://example.com/recipes')">
+                                复制
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="resource-link">旅行攻略</a></td>
+                        <td class="resource-desc">国内外热门旅游景点攻略、行程规划、预算参考</td>
+                        <td>
+                            <span class="resource-url">https://example.com/travel-guides</span>
+                            <button class="copy-btn" onclick="copyToClipboard('https://example.com/travel-guides')">
+                                复制
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="resource-link">健身教程</a></td>
+                        <td class="resource-desc">居家健身、瑜伽、有氧运动等健身视频教程</td>
+                        <td>
+                            <span class="resource-url">https://example.com/fitness</span>
+                            <button class="copy-btn" onclick="copyToClipboard('https://example.com/fitness')">
+                                复制
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="resource-link">生活小技巧</a></td>
+                        <td class="resource-desc">家居收纳、清洁技巧、生活妙招等实用指南</td>
+                        <td>
+                            <span class="resource-url">https://example.com/life-tips</span>
+                            <button class="copy-btn" onclick="copyToClipboard('https://example.com/life-tips')">
+                                复制
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 分页导航 -->
+        <div class="pagination">
+            <a href="#" class="page-btn">首页</a>
+            <a href="#" class="page-btn">上一页</a>
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <a href="#" class="page-btn">下一页</a>
+            <a href="#" class="page-btn">末页</a>
+        </div>
+    </main>
+
+    <!-- 底部信息栏 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="copyright">
+                © 2025 个人网盘 保留所有权利
+            </div>
+            <div class="contact">
+                <a href="mailto:your.email@example.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" class="contact-item">
+                    <i class="fab fa-weixin"></i>
+                </a>
+                <a href="#" class="contact-item">
+                    <i class="fab fa-weibo"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
